@@ -1,7 +1,7 @@
 #include <iostream>
 #include<string>
 using namespace std;
-
+// base class
 class Person{
 public:
     string name;
@@ -10,7 +10,7 @@ public:
     void setAge(int iage){age = iage;}
 
 };
-
+// derived class with public inheritance
 class Student : public Person{
 public:
     int id;

@@ -1,5 +1,6 @@
 #include <iostream>  
-using namespace std;  
+using namespace std;
+
 class Demo  
 {  
     public:  
@@ -26,16 +27,16 @@ class Demo
     }  
     void showdata()  
     {  
-        std::cout << "value of a is : " <<a<< std::endl;  
-        std::cout << "value of b is : " <<b<< std::endl;  
-        std::cout << "value of *p is : " <<*p<< std::endl;  
-    }  
-};  
+        cout << "value of a is : " <<a<<endl;  
+        cout << "value of b is : " <<b<<endl;  
+        cout << "value of *p is : " <<*p<<endl; 
+    }
+};
 int main()  
-{  
-  Demo d1;  
-  d1.setdata(4,5,7);  
-  Demo d2 = d1;  
-  d2.showdata();  
-  return 0;  
-}  
+{
+  Demo d1;
+  d1.setdata(4,5,7);
+  Demo d2 = d1; 
+  d2.showdata();
+  return 0;
+}
