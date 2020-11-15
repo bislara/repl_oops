@@ -13,11 +13,11 @@ public:
     void tellme(){
         cout <<name<<endl<<age<<endl;
     }
-    friend void display(Human man);
+    void display(Human man);
 
 };
 
-void display(Human man){
+void Human ::display(Human man){
     man.name = "LARA";
     cout <<man.name<<endl<<man.age<<endl;
 }
@@ -25,6 +25,6 @@ void display(Human man){
 int main()
 {
     Human anil("anil",24);
-    display(anil);
+    anil.display (anil);
     return 0;
 }

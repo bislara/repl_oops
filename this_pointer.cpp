@@ -13,9 +13,13 @@ public:
     }
 };
 
+
 int main()
 {
   Person anil;
+  Person * a = new Person;
+  a->setAge(20);
+  a->showAge();
   anil.setAge(24);
   anil.showAge();
   return 0;
